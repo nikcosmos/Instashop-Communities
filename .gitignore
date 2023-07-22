@@ -1,7 +1,8 @@
 node_modules/
-dist/
+# dist/
 Source/
 version.json
 undefined
+console.log('undefined:', undefined)
 **/*.zip
 **/*.rar
