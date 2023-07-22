@@ -24,51 +24,44 @@
 
 :root {
   --font: "Inter";
-  --base-text-color: #4f4f4f;
-  --gradient-text-color: linear-gradient(135deg, rgb(51, 51, 51), #fb00ff);
+  --base-text-color: #ffffff;
+  --gradient-text-color: linear-gradient(135deg, #f19646, #f19646);
   --bg-body: #f9f8f8;
-  --bg-wrapper: #f9f8f8;
-  --burger-bg: linear-gradient(135deg, #f9f8f8 0%, rgba(251, 0, 255, 1) 270%);
+  --bg-wrapper: url("../img/main-lines.png") -70px 0% / auto no-repeat,
+     url("../img/main-bg.jpg") 0 0 / cover no-repeat;
+  --burger-bg: linear-gradient(135deg, #5c5c5c 0%, #f0ccac 200%);
   --burger-border-radius: 20px;
-  --burger-icon-color: #4f4f4f;
-  --burger-list-title: rgba(110, 110, 110, 1);
-  --burger-lang-item-color-active: linear-gradient(
-     125deg,
-     #fb00ff 0%,
-     #921c95 100%
-  );
-  --tabs-bg: linear-gradient(
-     223deg,
-     rgba(0, 143, 255, 0.1) 0%,
-     rgba(251, 0, 255, 0.1) 100%
-  );
-  --tabs-text-color: #4f4f4f;
-  --tabs-active-bg: linear-gradient(125deg, #fb00ff 0%, #921c95 100%);
+  --burger-icon-color: #ffffff;
+  --burger-list-title: #ffffff;
+  --burger-lang-item-color-active: #f19646;
+  --tabs-bg: rgba(91, 91, 93, 0.5);
+  --tabs-text-color: #f19646;
+  --tabs-active-bg: #f19646;
   --tabs-text-active-color: #ffffff;
   --tabs-border-radius: 12px;
-  --screen-bg: rgba(230, 225, 225, 0.5);
-  --screen-border-color: #fb00ff;
+  --screen-bg: #5b5b5d;
+  --screen-border-color: #f19646;
   --screen-border-radius: 16px;
-  --screen-img-bg: linear-gradient(
-     223deg,
-     rgba(0, 145, 255, 0.5) 0%,
-     rgba(251, 0, 255, 0.5) 100%
-  );
+  --screen-img-bg: rgba(241, 150, 70, 0.3);
   --screen-img-bg-size: 320px;
-  --quote-color: #921c95;
-  --label-bg: linear-gradient(125deg, rgba(251, 0, 255, 0.3) 0%, #921c95 100%);
+  --quote-color: #f19646;
+  --label-bg: #f19646;
   --label-text-color: #ffffff;
-  --pagination-bg: rgb(134, 134, 134);
-  --pagination-bg-active: #fb00ff;
-  --button-bg: linear-gradient(125deg, #fb00ff 0%, #921c95 100%);
+  --pagination-bg: #ffffff;
+  --pagination-bg-active: #f19646;
+  --button-bg: #f19646;
   --button-text-color: #ffffff;
-  --input-bg: linear-gradient(135deg, #f9f8f8 0%, rgba(68, 72, 69, 0.2) 100%);
+  --input-bg: linear-gradient(
+     135deg,
+     #ffffff 0%,
+     rgba(241, 150, 70, 0.3) 200%
+  );
   --input-text-color: #4f4f4f;
   --input-error-color: red;
-  --site-loader-bg: #f9f8f8;
+  --site-loader-bg: #919192;
   --sity-loader-color-1: #4f4f4f;
-  --sity-loader-color-2: #fb00ff;
-  --lazy-loader-color: #fb00ff;
+  --sity-loader-color-2: #f19646;
+  --lazy-loader-color: #f19646;
   --lazy-loader-size: 30px;
   --cb: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   --white: #4f4f4f;
@@ -762,12 +755,11 @@ img[data-ll-status]._lazy-loaded + .lazy-loader {
 }
 
 .header__logo {
-  height: 30px;
+  height: 70px;
   margin-bottom: 5px;
 }
 
 .header__logo img {
-  background: var(--black);
   border-radius: 12px;
   height: 100%;
   width: 100%;
