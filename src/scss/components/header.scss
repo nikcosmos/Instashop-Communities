@@ -75,8 +75,12 @@
       }
    }
    &__logo {
+      height: 30px;
       margin-bottom: 5px;
       img {
+         background: var(--black);
+         border-radius: 12px;
+         height: 100%;
          width: 100%;
          object-fit: contain;
       }
