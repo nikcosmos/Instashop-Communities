@@ -762,10 +762,14 @@ img[data-ll-status]._lazy-loaded + .lazy-loader {
 }
 
 .header__logo {
+  height: 30px;
   margin-bottom: 5px;
 }
 
 .header__logo img {
+  background: var(--black);
+  border-radius: 12px;
+  height: 100%;
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
